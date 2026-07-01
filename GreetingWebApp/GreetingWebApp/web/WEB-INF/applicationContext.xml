@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+ http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--
+    ══════════════════════════════════════════════════════════════
+    Component Scan
+    ══════════════════════════════════════════════════════════════
+    Scans the base package for annotated components (@Service, etc.)
+    In this project we define the bean explicitly below,
+    but component-scan is included for future extensibility.
+    -->
+    <context:component-scan base-package="com.greet"/>
+    <!--
+    ══════════════════════════════════════════════════════════════
+    GreetingService Bean Definition
+    ══════════════════════════════════════════════════════════════
+   spring-greeting-webapp-plan-solution.md 2026-06-21
+   14 / 23
+    - id : "greetingService" — used in GreetingServlet to fetch this bean
+    - class : fully qualified class name of the implementation
+    - init-method : called after bean construction + property injection
+    - destroy-method : called when Spring context shuts down
+    Property Injection:
+    - "prefix" is set to "Hello" via setter injection
+    (calls setPrefix("Hello") on the bean)
+    -->
+    <bean id="greetingService"
+          class="com.greet.service.GreetingServiceImpl"
+          init-method="init"
+          destroy-method="destroy">
+        <!-- Setter injection: injects "Hello" into the 'prefix' field -->
+        <property name="prefix" value="Hello"/>
+    </bean>
+</beans>
