@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Greeting_with_Login:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Greeting_with_Login_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Greeting_with_Login" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/jakarta.servlet.jsp.jstl-3.0.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/jakarta.servlet.jsp.jstl-api-3.0.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/commons-logging-1.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/postgresql-42.7.3 (1).jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/spring-aop-6.1.6.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/spring-beans-6.1.6.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/spring-context-6.1.6.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/spring-core-6.1.6.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/spring-expression-6.1.6.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/spring-jdbc-6.1.6.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/spring-tx-6.1.6.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/spring-web-6.1.6.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/jakarta.servlet-api-6.2.0-M2.jar" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Greeting_with_Login/web/Web" />
+    </root>
+  </artifact>
+</component>
